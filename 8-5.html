@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        @media screen and (orientation : portrait) {
+            div.left{
+                display: none;
+            }
+        }
+        @media screen and (orientation : landscape) {
+            div.left{
+                width: 30%;
+                float: left;
+            }
+            div.right{
+                width: 70%;
+                float:right;
+            }
+        }
+        div.content{
+            padding: 16px;
+        }
+        li{
+            padding: 24px 0px 24px 0px;
+            border-bottom: 1px solid #c7c7c7
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="left">
+            <div class="content">
+                <h1>List</h1>
+                <ul>
+                    <li>첫번째 리스트 입니다.</li>
+                    <li>두번째 리스트 입니다.</li>
+                    <li>세번째 리스트 입니다.</li>
+                    <li>네번째 리스트 입니다.</li>
+                    <li>다섯번째 리스트 입니다.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="content">
+                <h1>제목제목제목</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi similique deleniti natus dolorem delectus quia ipsum id aperiam quo, sed nesciunt molestias debitis eaque nemo! Earum veritatis reprehenderit eum error.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis provident officia perferendis repudiandae illo sed enim quae molestiae a, doloremque ratione inventore molestias commodi cum! Repellendus natus quidem provident accusantium?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, autem, perspiciatis odit placeat esse illum beatae deserunt fuga distinctio quo, itaque laudantium quam id vitae quod tenetur. Molestias, explicabo iste.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto dolore debitis pariatur dolor ratione minus quia magni explicabo autem modi, natus quos. Nisi libero ipsum corporis quod, sit eaque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
